@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://mybk.hcmut.edu.vn/stinfo/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_token" content="fUtmLrF0uac99aS8siqdElY8V9PeKhpxqZkGHvad">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cổng Thông Tin Sinh Viên</title>
+
+    <!-- Bootstrap -->
+    <link href="https://mybk.hcmut.edu.vn/stinfo/public/images/icon/logo.png" rel="icon">
+    <link href="./Cổng Thông Tin Sinh Viên_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/fonts.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/styles.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/mystyle.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/mobile.css" rel="stylesheet">
+    <link href="./Cổng Thông Tin Sinh Viên_files/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Cổng Thông Tin Sinh Viên_files/jqx.base.css" type="text/css">
+    <link rel="stylesheet" href="./Cổng Thông Tin Sinh Viên_files/jqx.arctic.css" type="text/css">
+    <link rel="stylesheet" href="./Cổng Thông Tin Sinh Viên_files/jqx.energyblue.css" type="text/css">
+    <link rel="stylesheet" href="./Cổng Thông Tin Sinh Viên_files/jqx.bootstrap.css" type="text/css">
+    <!-- notification-->
+    <link rel="stylesheet" type="text/css" href="./Cổng Thông Tin Sinh Viên_files/toastr.css">
+    <script src="./Cổng Thông Tin Sinh Viên_files/toastr.jquery.js"></script>
+    <script src="./Cổng Thông Tin Sinh Viên_files/toastr.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]-->
+    <script src="./Cổng Thông Tin Sinh Viên_files/html5shiv.min.js"></script>
+    <script src="./Cổng Thông Tin Sinh Viên_files/respond.min.js"></script>
+    <!--
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+<div id="jqxLoader" class="jqx-widget jqx-loader jqx-rc-all jqx-fill-state-normal jqx-rc-t jqx-rc-b jqx-popup" style="width: 100px; height: 60px; display: none; left: -50px; top: -30px;">
+<div class="jqx-loader-icon" style="background-position-y: 0%;"></div><div class="jqx-loader-text jqx-loader-text-bottom">Đang tải...</div></div>
+
+<div class="wrapper">
+    <!-- left menu -->
+    <div id="adminmenumain">
+        <div class="sidebar">
+            <div class="left-menu-scroll">
+                <div class="menu-hidden-dk menu-hidden-wp">
+                    <a class="button"><i class="fa fa-bars"></i></a>
+                </div>
+                <div id="cssmenu">
+    <ul id="mainmenu">
+        <li id="li-menu-home" class="">
+
+            <a data-link="#" class="menutab" id="menu-home" data-module="home" data-name="Trang chủ">
+                <span style="border-color: rgb(255, 255, 255);">
+                    <i class="icon-menu-left">T</i> <span class="hide-menu-left">Trang chủ</span>
+                </span>
+            </a>
+    </li>
+     <li id="li-menu-101" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-101" data-module="61" data-name="Thông tin sinh viên">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">T</i> <span class="hide-menu-left">Thông tin sinh viên</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-102"><a data-link="profile" class="menutab" id="menu-102" data-module="61" data-name="Lý lịch "><span>Lý lịch&nbsp;</span> </a></li>
+                            <li id="li-menu-161"><a data-link="profileedit" class="menutab" id="menu-161" data-module="61" data-name="Cập nhật địa chỉ"><span>Cập nhật địa chỉ</span> </a></li>
+                            <li id="li-menu-202"><a data-link="qd" class="menutab" id="menu-202" data-module="121" data-name="Tình trạng sinh viên"><span>Tình trạng sinh viên</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-383" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-383" data-module="61" data-name="Tuyển sinh">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">T</i> <span class="hide-menu-left">Tuyển sinh</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-302"><a data-link="ketqua_tuyensinh" class="menutab" id="menu-302" data-module="61" data-name="Kết quả tuyển sinh"><span>Kết quả tuyển sinh</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-187" class="has-sub active">
+        <a data-link="#" class="menutab" id="menu-187" data-module="61" data-name="Học tập">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">H</i> <span class="hide-menu-left">Học tập</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-188"><a data-link="lichhoc" class="menutab" id="menu-188" data-module="61" data-name="Thời khóa biểu "><span>Thời khóa biểu </span> </a></li>
+                            <li id="li-menu-223"><a data-link="lichthi" class="menutab" id="menu-223" data-module="61" data-name="Lịch thi"><span>Lịch thi</span> </a></li>
+                            <li id="li-menu-189" class="active"><a data-link="grade" class="menutab" id="menu-189" data-module="101" data-name="Bảng điểm"><span>Bảng điểm</span> </a></li>
+                            <li id="li-menu-142"><a data-link="message" class="menutab" id="menu-142" data-module="61" data-name="Thông báo"><span>Thông báo</span> </a></li>
+                            <li id="li-menu-421"><a data-link="grade_diemchuyen" class="menutab" id="menu-421" data-module="61" data-name="Điểm chuyển"><span>Điểm chuyển</span> </a></li>
+                            <li id="li-menu-441"><a data-link="contact" class="menutab" id="menu-441" data-module="61" data-name="Góp ý"><span>Góp ý</span> </a></li>
+                            <li id="li-menu-761"><a data-link="hoc-phi" class="menutab" id="menu-761" data-module="381" data-name="Học phí"><span>Học phí</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-581" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-581" data-module="61" data-name="Thống kê học tập">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">T</i> <span class="hide-menu-left">Thống kê học tập</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-582"><a data-link="student_charts" class="menutab" id="menu-582" data-module="301" data-name="Điểm trung bình "><span>Điểm trung bình&nbsp;</span> </a></li>
+                            <li id="li-menu-583"><a data-link="student_chartstinchi" class="menutab" id="menu-583" data-module="321" data-name="Số tín chỉ "><span>Số tín chỉ&nbsp;</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-203" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-203" data-module="61" data-name="Tốt nghiệp">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">T</i> <span class="hide-menu-left">Tốt nghiệp</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-301"><a data-link="ketqua_totnghiep" class="menutab" id="menu-301" data-module="61" data-name="Bằng tốt nghiệp "><span>Bằng tốt nghiệp&nbsp;</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-721" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-721" data-module="61" data-name="Đăng ký thông tin">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">Đ</i> <span class="hide-menu-left">Đăng ký thông tin</span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-722"><a data-link="student-register-relative" class="menutab" id="menu-722" data-module="361" data-name="Người thân"><span>Người thân</span> </a></li>
+                    </ul>
+    </li>
+<li id="li-menu-182" class="has-sub">
+        <a data-link="#" class="menutab" id="menu-182" data-module="61" data-name="Hỗ trợ ">
+            <span style="border-color: rgb(255, 255, 255);"><i class="icon-menu-left">H</i> <span class="hide-menu-left">Hỗ trợ </span>
+            </span>
+        <span class="holder" style="border-color: rgb(255, 255, 255);"></span></a>
+    <ul class="sub-menu">
+                    <li id="li-menu-201"><a data-link="http://mybk.hcmut.edu.vn/" class="menutab" id="menu-201" data-module="61" data-name="myBK"><span>myBK</span> </a></li>
+                            <li id="li-menu-381"><a data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=90&amp;tid=114" class="menutab" id="menu-381" data-module="61" data-name="Quy chế"><span>Quy chế</span> </a></li>
+                            <li id="li-menu-382"><a data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=192&amp;tid=869" class="menutab" id="menu-382" data-module="61" data-name="Hướng dẫn"><span>Hướng dẫn</span> </a></li>
+                            <li id="li-menu-185"><a data-link="http://wiki.hcmut.edu.vn//index.php/Trang_Ch%C3%ADnh" class="menutab" id="menu-185" data-module="61" data-name="Bách Khoa Wiki"><span>Bách Khoa Wiki</span> </a></li>
+                            <li id="li-menu-384"><a data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitiettb&amp;thongbao_id=1693" class="menutab" id="menu-384" data-module="61" data-name="Địa điểm học"><span>Địa điểm học</span> </a></li>
+                            <li id="li-menu-241"><a data-link="giohoc" class="menutab" id="menu-241" data-module="61" data-name="Giờ học"><span>Giờ học</span> </a></li>
+                    </ul>
+    </li>
+ 
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end left menu -->
+    <!-- content -->
+    <div class="content-wp">
+        <!-- header -->
+        <section class="header-wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="logo-wp">
+                        <a href="https://mybk.hcmut.edu.vn/stinfo/#"><img src="./Cổng Thông Tin Sinh Viên_files/logo.png"></a>
+                    </div>
+                    <div class="logo-wp-mobile">
+                        <a href="https://mybk.hcmut.edu.vn/stinfo/#"><img src="./Cổng Thông Tin Sinh Viên_files/logo_bk_mobile.png"></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
+                    <!--   <div class="top-slogan-wp">
+                       <p>Cổng Thông Tin Sinh Viên</p>
+                    </div>-->
+                </div>
+                <div class="col-lg-9 col-md-6 col-sm-6 col-xs-6">
+                    <div class="top-user-setting">
+                        <ul class="top-user-setting-wp">
+        <li>
+
+                                    <div class="top-avatar1">
+                                            <img src="./Cổng Thông Tin Sinh Viên_files/icon-avatar.png">
+                    </div>
+                <div class="top-avatar2">
+                    <div class="dropdown">
+                            Kang  Minwoo
+                    </div>
+                    <p>Khoa Khoa học và Kỹ thuật Máy tính</p>
+                </div>
+                                
+            <div class="top-avatar2"><a href="https://mybk.hcmut.edu.vn/stinfo/logout"><img src="./Cổng Thông Tin Sinh Viên_files/logout_xam.png" width="36px" height="36x"></a></div>
+        </li>
+    </ul>
+                        <ul class="top-user-aler-wp">
+    <li>
+        <a data-link="message" class="menutab " id="menu-message" data-module="none" data-name="Thông báo, cảnh báo" data-toggle="tooltip" title=" ">
+            <div class="top-alert-wp ">
+                
+                <div class="top-alert-icon">
+                    <i class="fa fa-bell"></i>
+                </div>
+            </div>
+
+        </a>
+
+
+    </li>
+</ul>                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="hide-menu-mobile col-lg-4 col-md-11 col-sm-11 col-xs-11">
+                    <div class="menu-hidden-wp">
+                        <a class="button"><i class="fa fa-bars"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end header -->
+        <div class="content">
+
+            <div class="content-wpp">
+
+                <!-- head tab and breacum -->
+                <div class="breadcrumb-wp">
+                    <ol class="breadcrumb">
+                        <li><a id="breadcrumb_home"><i class="fa fa-home"></i></a></li>
+                        <li id="page_active">Bảng điểm</li>
+                        <span class="date-week-home" id="date_week-home">Tuần: <span class="date-week-home-organe">2</span>, Thứ Năm, Ngày 11/01/2024.</span>
+                    </ol>
+                </div>
+                <div class="header-tab-wp">
+                    <div class="header-tab-bg">
+<div id="jqxTabs" aria-disabled="false" class="jqx-tabs jqx-widget jqx-widget-content jqx-rc-all" role="tablist" hidefocus="true" aria-activedescendant="" tabindex="0" style="width: 100%;"><div class="jqx-tabs-headerWrapper jqx-tabs-header jqx-widget-header jqx-rc-t" style="outline: none; height: 28px; position: relative; left: 0px; top: 0px;"><ul id="hometabs" class="jqx-tabs-title-container" style="outline: none; white-space: nowrap; margin-top: 0px; margin-bottom: 0px; padding: 0px; background: transparent; border: none; text-indent: 0px; height: 28px; width: 1833px; left: 0px; position: relative; top: 0px;">
+        <li id="tab-menu-home" hasclosebutton="false" role="tab" class="jqx-reset jqx-disableselect jqx-tabs-title jqx-item jqx-rc-t" style="float: left; position: static; height: 16px;"><div class="jqx-tabs-titleWrapper" style="outline: none; position: relative; z-index: 15; height: 100%;"><div class="jqx-tabs-titleContentWrapper jqx-disableselect" style="float: left; margin-top: 0px;">Trang chủ</div><div class="jqx-tabs-close-button" style="height: 16px; width: 16px; float: left; font-size: 1px; display: none; margin-top: 1px;"></div></div></li><li class="jqx-reset jqx-disableselect jqx-tabs-title jqx-item jqx-rc-t jqx-tabs-title-selected-top jqx-fill-state-pressed" id="tab-menu-189" style="float: left; position: static; height: 16px;"><div class="jqx-tabs-titleContentWrapper jqx-disableselect" style="float: left; height: 100%; margin-top: 0px;">Bảng điểm</div><div class="jqx-tabs-close-button" style="height: 100%; width: 16px; float: left; font-size: 1px; display: block; margin-top: 1px;"></div></li>
+
+    </ul><div class="jqx-tabs-arrow-background jqx-widget-header" style="width: 16px; height: 100%; z-index: 30; display: none; position: absolute; top: 0px; left: 0px;"><span style="display: block; width: 16px; height: 16px; margin-top: 8.5px;" class="jqx-tabs-arrow-left"></span></div><div class="jqx-tabs-arrow-background jqx-widget-header" style="width: 16px; height: 100%; z-index: 30; display: none; position: absolute; top: 0px; right: 0px;"><span style="display: block; width: 16px; height: 16px; margin-top: 8.5px;" class="jqx-tabs-arrow-right"></span></div></div>
+    
+    <div class="jqx-tabs-content jqx-widget-content jqx-rc-b" style="float: none; width: 100%; height: auto;"><div role="tabpanel" class="jqx-tabs-content-element jqx-rc-b" style="display: none;">
+        <div class="row home-content-padding bg-white grid" style="position: relative; height: 627px;">
+            <div class="grid-sizer"></div>
+            <div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 0px; top: 0px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="profile" class="menutab" id="menu-102" data-module="home" data-name="Lý lịch&lt;br&gt; ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477389364-196960.png" data-link="profile" class="menutab" id="menu-102" data-module="home" data-name="Lý lịch&lt;br&gt; ">
+                                                        <h4>Lý lịch<br>&nbsp;</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="profileedit" class="menutab" id="menu-161" data-module="home" data-name="Cập nhật&lt;br&gt; địa chỉ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477974698-update.png" data-link="profileedit" class="menutab" id="menu-161" data-module="home" data-name="Cập nhật&lt;br&gt; địa chỉ">
+                                                        <h4>Cập nhật<br> địa chỉ</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="qd" class="menutab" id="menu-202" data-module="home" data-name="Tình trạng&lt;br&gt; sinh viên">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477983494-scales.png" data-link="qd" class="menutab" id="menu-202" data-module="home" data-name="Tình trạng&lt;br&gt; sinh viên">
+                                                        <h4>Tình trạng<br> sinh viên</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Thông tin sinh viên</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 610px; top: 0px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="ketqua_tuyensinh" class="menutab" id="menu-302" data-module="home" data-name="Kết quả &lt;br&gt;tuyển sinh">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477388892-handshake.png" data-link="ketqua_tuyensinh" class="menutab" id="menu-302" data-module="home" data-name="Kết quả &lt;br&gt;tuyển sinh">
+                                                        <h4>Kết quả <br>tuyển sinh</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Tuyển sinh</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 1221px; top: 0px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="lichhoc" class="menutab" id="menu-188" data-module="home" data-name="Thời khóa biểu ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477389315-calendar-1.png" data-link="lichhoc" class="menutab" id="menu-188" data-module="home" data-name="Thời khóa biểu ">
+                                                        <h4>Thời khóa biểu </h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="lichthi" class="menutab" id="menu-223" data-module="home" data-name="Lịch thi">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477389349-list-2.png" data-link="lichthi" class="menutab" id="menu-223" data-module="home" data-name="Lịch thi">
+                                                        <h4>Lịch thi</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="grade" class="menutab" id="menu-189" data-module="home" data-name="Bảng điểm">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477984406-nine.png" data-link="grade" class="menutab" id="menu-189" data-module="home" data-name="Bảng điểm">
+                                                        <h4>Bảng điểm</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="message" class="menutab" id="menu-142" data-module="home" data-name="Thông báo">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477388814-alarm-2.png" data-link="message" class="menutab" id="menu-142" data-module="home" data-name="Thông báo">
+                                                        <h4>Thông báo</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="grade_diemchuyen" class="menutab" id="menu-421" data-module="home" data-name="Điểm chuyển">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1481700005-shuffle_vang.png" data-link="grade_diemchuyen" class="menutab" id="menu-421" data-module="home" data-name="Điểm chuyển">
+                                                        <h4>Điểm chuyển</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="contact" class="menutab" id="menu-441" data-module="home" data-name="Góp ý">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1484395078-brainstorm.png" data-link="contact" class="menutab" id="menu-441" data-module="home" data-name="Góp ý">
+                                                        <h4>Góp ý</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="hoc-phi" class="menutab" id="menu-761" data-module="home" data-name="Học phí">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1509334664-dollar-symbol.png" data-link="hoc-phi" class="menutab" id="menu-761" data-module="home" data-name="Học phí">
+                                                        <h4>Học phí</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Học tập</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 0px; top: 186px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="student_charts" class="menutab" id="menu-582" data-module="home" data-name="Điểm trung bình&lt;br&gt; ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1490612596-line-chart1.png" data-link="student_charts" class="menutab" id="menu-582" data-module="home" data-name="Điểm trung bình&lt;br&gt; ">
+                                                        <h4>Điểm trung bình<br>&nbsp;</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="student_chartstinchi" class="menutab" id="menu-583" data-module="home" data-name="Số tín chỉ&lt;br&gt; ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1490684514-line-chart3.png" data-link="student_chartstinchi" class="menutab" id="menu-583" data-module="home" data-name="Số tín chỉ&lt;br&gt; ">
+                                                        <h4>Số tín chỉ<br>&nbsp;</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Thống kê học tập</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 610px; top: 186px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="ketqua_totnghiep" class="menutab" id="menu-301" data-module="home" data-name="Bằng tốt nghiệp&lt;br&gt; ">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477389634-graduation.png" data-link="ketqua_totnghiep" class="menutab" id="menu-301" data-module="home" data-name="Bằng tốt nghiệp&lt;br&gt; ">
+                                                        <h4>Bằng tốt nghiệp<br>&nbsp;</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Tốt nghiệp</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 1221px; top: 340px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="student-register-relative" class="menutab" id="menu-722" data-module="home" data-name="Người thân">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1506999663-family-in-home64.png" data-link="student-register-relative" class="menutab" id="menu-722" data-module="home" data-name="Người thân">
+                                                        <h4>Người thân</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Đăng ký thông tin</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-item  col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 0px; top: 372px;">
+    <div class="box-content-home-bg">
+        <div class="box-content-home-wp">
+            <div class="box-content-home">
+                <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="http://mybk.hcmut.edu.vn/" class="menutab" id="menu-201" data-module="home" data-name="myBK">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1474446947-bkpay.png" data-link="http://mybk.hcmut.edu.vn/" class="menutab" id="menu-201" data-module="home" data-name="myBK">
+                                                        <h4>myBK</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=90&amp;tid=114" class="menutab" id="menu-381" data-module="home" data-name="Quy chế">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477388858-justice.png" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=90&amp;tid=114" class="menutab" id="menu-381" data-module="home" data-name="Quy chế">
+                                                        <h4>Quy chế</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=192&amp;tid=869" class="menutab" id="menu-382" data-module="home" data-name="Hướng dẫn">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477388870-user-guide-book.png" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitietsv&amp;path=192&amp;tid=869" class="menutab" id="menu-382" data-module="home" data-name="Hướng dẫn">
+                                                        <h4>Hướng dẫn</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="http://wiki.hcmut.edu.vn//index.php/Trang_Ch%C3%ADnh" class="menutab" id="menu-185" data-module="home" data-name="Bách Khoa Wiki">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1474446901-wikibk.png" data-link="http://wiki.hcmut.edu.vn//index.php/Trang_Ch%C3%ADnh" class="menutab" id="menu-185" data-module="home" data-name="Bách Khoa Wiki">
+                                                        <h4>Bách Khoa Wiki</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitiettb&amp;thongbao_id=1693" class="menutab" id="menu-384" data-module="home" data-name="Địa điểm học">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477541395-home2.png" data-link="http://www.aao.hcmut.edu.vn/index.php?route=catalog/chitiettb&amp;thongbao_id=1693" class="menutab" id="menu-384" data-module="home" data-name="Địa điểm học">
+                                                        <h4>Địa điểm học</h4>
+                        </div>
+                        </a>
+                    </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a style="text-decoration: none;" data-link="giohoc" class="menutab" id="menu-241" data-module="home" data-name="Giờ học">
+                        <div class="menu-box-wp">
+                                                            <img src="./Cổng Thông Tin Sinh Viên_files/1477388837-stopwatch.png" data-link="giohoc" class="menutab" id="menu-241" data-module="home" data-name="Giờ học">
+                                                        <h4>Giờ học</h4>
+                        </div>
+                        </a>
+                    </div>
+                                                        </div>
+            </div>
+            <div class="box-content-home-ft">
+                <h4>Hỗ trợ </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div><div class="jqx-tabs-content-element jqx-rc-b" style="display: block;">
+<meta name="_token" content="fUtmLrF0uac99aS8siqdElY8V9PeKhpxqZkGHvad">
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            }
+        });
+        $('#jqxLoader').jqxLoader('open');
+        $.ajax({
+
+            url: "grade/ajax_grade",
+            method: "POST",
+            type: 'json',
+            data : {_token: $('meta[name="_token"]').attr('content')},
+            success: function (data, status, xhr) {
+                var show = true;
+                try
+                {
+                    
+                    var myobj2 = JSON.parse(JSON.stringify(data));
+                    if (myobj2.guest) {
+                        show = false;
+                        
+                        $(location).attr('href','login');
+
+                    }
+                    else if(myobj2.norole){
+
+                        bootbox.alert("Không được cấp quyền để truy cập chức năng này");
+                        return;
+                        }
+                    else {
+                        myobj = data;
+
+                        var html_select = '';
+                        var html_grade = "";
+                        var html_grade_ng = "";
+
+
+                        html_select += '<select class="form-control" name="select-grade" id="select-grade"><option value="all">Tất cả học kỳ</option>';
+                        if(myobj.length == 0)
+                        {
+                            html_grade += '<div align="center" style="margin-top:20px;margin-bottom:20px;font-size:14px;color:red;">Bảng điểm chưa được cập nhật!</div>';
+                            toastr["error"]("Không tìm thấy dữ liệu điểm!")
+                        }
+                        else {
+                            //kiemtra
+                            //toastr["error"]("kiemtra")
+                            for (var r in myobj) {
+                                if (myobj.hasOwnProperty(r)) {
+                                    html_select += '<option value="' +  myobj[r].hk_nh + '">' + myobj[r].ten_hocky + '</option>';
+                                    html_grade += '<div align="left" class="grade-all grade-' + myobj[r].hk_nh + ' titlehocky">' + myobj[r].ten_hocky + '</div> <div align=left class="grade-all grade-' + myobj[r].hk_nh + '" >';
+                                    if (myobj[r].trang_thai=='Yes') html_grade +=  '<i>Ngày cập nhật điểm các môn học: <span class=blue1>đang cập nhật dữ liệu điểm</span></i></div>';
+                                    else
+                                        html_grade +=  '<i>Ngày cập nhật điểm các môn học:'+myobj[r].ngay_cap_nhat + '</i></div> ';
+
+
+                                    html_grade += '<div class="content-tab-table">';
+                                    html_grade += '<table class="grade-all grade-' + myobj[r].hk_nh + ' table table-bordered table-striped"><thead>';
+                                    html_grade += '<tr>';
+                                    html_grade +='<th>Mã MH</th>';
+                                    html_grade +='<th width="30%">Tên môn học</th>';
+                                    html_grade +='<th >Nhóm-Tổ</th>';
+                                    html_grade +='<th>Số TC</th>';
+                                    html_grade +='<th valign="middle">Điểm thành phần</th>';
+                                    html_grade +='<th>Điểm thi</th>';
+                                  //  html_grade +='<th>Điểm thi lại (VP)</th>';
+                                    html_grade +='<th>Điểm tổng kết</th>';
+                                    html_grade +='</tr></thead>';
+                                    html_grade +='<tbody>';
+                                    var diems = myobj[r].diem;
+                                    for (var g in diems) {
+                                        var ma_mh = diems[g].ma_mh;
+                                        var ten_mh = diems[g].ten_mh;
+                                        var nhomto = diems[g].nhomto;
+                                        var so_tin_chi = diems[g].so_tin_chi;
+                                        var diemtl=diems[g].diem_thilai
+                                        var diem_thanhphan =diems[g].diem_thanhphan ;
+                                        if (diem_thanhphan == null)diem_thanhphan = ' ';
+                                        if (diemtl == null)diemtl=' ' ;else diemtl='; '+diemtl+' (lần 2)';
+                                        var diem_thi = diems[g].diem_thi;
+                                        if (diem_thi == null) diem_thi = ' ';
+
+                                        var diem_tong_ket = diems[g].diem_tong_ket;
+                                        if (diem_tong_ket == null) diem_tong_ket = ' ';
+                                        html_grade += '<tr>';
+
+                                        html_grade += '<td>' + ma_mh + '</td>';
+                                        html_grade += '<td>' + ten_mh + '</td>';
+                                        html_grade += '<td align="center">' + nhomto + '</td>';
+                                        html_grade += '<td align="center">' + so_tin_chi + '</td>';
+                                        html_grade += '<td>' + diem_thanhphan + '</td>';
+                                        html_grade += '<td align="center">' + diem_thi + '</td>';
+                                       // html_grade += '<td align="center">' + diemtl + '</td>';
+                                        html_grade += '<td align="center">' + diem_tong_ket +diemtl+ '</td>';
+                                        html_grade += '</tr>';
+
+
+                                    }
+
+                                    var so_tc = myobj[r].so_tc;
+                                    if (so_tc == null)so_tc = '--';
+                                    var so_tctl_hk = myobj[r].so_tctl_hk;
+                                    if (so_tctl_hk == null)so_tctl_hk = '--';
+                                    var diem_tb = myobj[r].diem_tb;
+                                    if (diem_tb == null)diem_tb = '--';
+                                    var so_tctl = myobj[r].so_tctl;
+                                    if (so_tctl == null)so_tctl = '--';
+                                    var diem_tbtl = myobj[r].diem_tbtl;
+                                    if (diem_tbtl == null)diem_tbtl = '--';
+                                    var ngay_th=myobj[r].ngay_th;
+                                    if (ngay_th == null)ngay_th = '--';
+
+                                    //diem hoc bong
+                                    var dtb_chung_morong=myobj[r].dtb_chung_morong;
+                                    if (dtb_chung_morong == null)dtb_chung_morong = '--';
+                                    var diem_renluyen=myobj[r].diem_renluyen;
+                                    if (diem_renluyen == null)diem_renluyen = '--';
+                                    var dtb_1hocky=myobj[r].dtb_1hocky;
+                                    if (dtb_1hocky == null)dtb_1hocky = '--';
+                                    var sotc_dat_hocky=myobj[r].sotc_dat_hocky;
+                                    if (sotc_dat_hocky == null)sotc_dat_hocky = '--';
+
+                                    var diemtb_he10=myobj[r].diemtb_he10;
+                                    if (diemtb_he10 == null)diemtb_he10 = '--';
+                                    var diemtbtl_he10=myobj[r].diemtbtl_he10;
+                                    if (diemtbtl_he10 == null)diemtbtl_he10 = '--';
+
+                                    var dieukien_hbkk=myobj[r].dieukien_hbkk;
+
+                                    var kq_hbkk=myobj[r].kq_hbkk;
+                                    var sotien_hbkk=myobj[r].sotien_hbkk;
+                                    var ngay_hbkk=myobj[r].ngay_hbkk;
+
+                                    if (dieukien_hbkk == null )dieukien_hbkk = 'Không đủ';else dieukien_hbkk='<span style="color:#0c6aaa">Đủ</span>';
+
+                                    if (ngay_hbkk == null ){kq_hbkk = '--'; ngay_hbkk='--';}
+                                    else if (kq_hbkk==null) {
+                                        kq_hbkk = '--';
+                                        ngay_hbkk = '<span style="color:#075385">' + ngay_hbkk + '</span>';}
+                                    else {
+                                        kq_hbkk = '<span style="color:#075385">loại ' + kq_hbkk + ' (số tiền:' + sotien_hbkk + 'đ)</span>';
+                                        ngay_hbkk = '<span style="color:#075385">' + ngay_hbkk + '</span>';
+                                    }
+
+                                    //if (strtoupper(kq_hbkk)=="K") kq_hbkk = 'không đạt';
+                                    if (kq_hbkk=="K") kq_hbkk = 'không đạt';
+
+                                    html_grade +='<tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: '+ngay_th + '</span></small></i></td></tr>';
+
+                                    html_grade += '<tr style="color:#cc3c1f"><td colspan="3" > Số tín chỉ đăng ký học kỳ :<b>'+ so_tc  +'</b>';
+                                    html_grade += '</br>Số tín chỉ tích lũy học kỳ:<b>' + so_tctl_hk+'</b>';
+                                    html_grade += '</br>Điểm trung bình học kỳ:<b>' + diem_tb +'</b>' ;
+                                    html_grade += '</br>Số tín chỉ tích lũy:<b>' + so_tctl +'</b>'
+                                    html_grade += '</br>Điểm trung bình tích lũy:<b>' + diem_tbtl +'</b>'
+
+                                    html_grade += '</td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> ' +
+                                        '</br> ĐTB 1 học kỳ: <b>' + dtb_1hocky +'</b>'+
+                                        '</br> Điểm rèn luyện: <b>' + diem_renluyen +'</b>'+
+                                        '</br> Số TC đạt trong học kỳ: <b>' + sotc_dat_hocky +'</b>'+
+                                        '</br> Số TC tích lũy: <b>' + dtb_chung_morong +'</b>'+
+                                        '</br> Điểm trung bình hệ 10: <b>' + diemtb_he10 +'</b>'+
+                                        '</br> Điểm trung bình tích lũy hệ 10: <b>' + diemtbtl_he10 +'</b>'+
+                                        '</br> Điều kiện xét HBKK: <b>'+dieukien_hbkk+'</b>'+
+                                        '</br> Kết quả xét HBKK: <b>'+kq_hbkk+'</b>'+
+                                        '</br> Ngày cập nhật: <b>'+ngay_hbkk+'</b>';
+                                    //console.log(html_grade);
+                                    // '</br> Điểm trung bình hệ 10: <b>' + diemtb_he10 +'</b>'+
+                                    // '</br> Điểm trung bình tích lũy hệ 10: <b>' + diemtbtl_he10 +'</b>'+
+
+                                    //html_grade +='<br><i><small><span style="color: #065485"> Ngày cập nhật Số tín chỉ, Điểm TB ...:'+ngay_th + '</span></small></i>';
+                                    html_grade += '</td></tr>';
+                                    html_grade += '</tbody>';
+                                    html_grade += '</table>';
+
+                                    html_grade += '</div>';
+                               
+                                }
+                            }//for
+                        }
+
+                        html_select += '</select>';
+                        $(".grade-content-div-ng").html(html_grade_ng);
+
+                        $(".grade-select-div").html(html_select);
+                        $(".grade-content-div").html(html_grade);
+                    }
+
+                }
+                catch(err){
+
+                }
+
+                $('#jqxLoader').jqxLoader('close');
+            },
+            error: function(e, ts, et) { //bootbox.alert('Lỗi hoặc không tìm thấy nội dung');
+                toastr["error"]("Lỗi hoặc không tìm thấy nội dung, vui lòng refresh lại trang!");
+                $('#jqxLoader').jqxLoader('close');}
+        });
+
+        $(document).on('change','#select-grade',function (event) {
+            if($(this).val() == 'all')
+            {
+                $(".grade-all").show();
+            }
+            else {
+                $(".grade-all").hide();
+                var mhk = $(this).val();
+
+                $(".grade-" + mhk).show();
+            }
+
+        });
+    });
+</script>
+
+<div class="row home-content-padding" style="padding:20px">
+
+   <div align="center" class="titletracuu">BẢNG ĐIỂM SINH VIÊN</div>
+    <div align="left">
+         Họ tên:
+            <span class="blue"><b>
+            Kang  Minwoo (1652001)
+            </b></span>
+            <p>&nbsp;</p>
+            </div>
+    <div align="left" style="color: #0c6aaa">
+                    Số tín chỉ tích lũy ngành: <b> <span style="color: #cc3c1f"> 119</span></b>
+            <br> Điểm trung bình tích lũy ngành: <b><span style="color: #cc3c1f"> 6.13</span></b>
+            <br> Tính đến hết học kỳ : <b> <span style="color: #cc3c1f">HK1 (2022-2023)</span></b>
+
+            <small><p><i><br>Ngày cập nhật : <span style="color: #cc3c1f">
+
+                             4/12/2023 12:52:33 PM
+                        </span></i></p>
+            </small>
+            </div>
+    <br>
+    <div align="center" class="grade-content-div-ng"></div>
+    <div align="center" class="grade-select-div" title="click chọn học kỳ để lọc"><select class="form-control" name="select-grade" id="select-grade"><option value="all">Tất cả học kỳ</option><option value="20231">null</option><option value="20222">Học kỳ 2 (2022-2023)</option><option value="20221">Học kỳ 1 (2022-2023)</option><option value="20213">Học kỳ 3 (2021-2022)</option><option value="20212">Học kỳ 2 (2021-2022)</option><option value="20211">Học kỳ 1 (2021-2022)</option><option value="20203">Học kỳ 3 (2020-2021)</option><option value="20202">Học kỳ 2 (2020-2021)</option><option value="20201">Học kỳ 1 (2020-2021)</option><option value="20193">Học kỳ 3 (2019-2020)</option><option value="20192">Học kỳ 2 (2019-2020)</option><option value="20191">Học kỳ 1 (2019-2020)</option><option value="20183">Học kỳ 3 (2018-2019)</option><option value="20182">Học kỳ 2 (2018-2019)</option><option value="20181">Học kỳ 1 (2018-2019)</option><option value="20172">Học kỳ 2 (2017-2018)</option><option value="20171">Học kỳ 1 (2017-2018)</option><option value="20162">Học kỳ 2 (2016-2017)</option><option value="20161">Học kỳ 1 (2016-2017)</option></select></div>
+    <div align="center" class="grade-content-div"><div align="left" class="grade-all grade-20231 titlehocky">null</div> <div align="left" class="grade-all grade-20231"><i>Ngày cập nhật điểm các môn học:11/01/2024 8:26:06 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20231 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3005</td><td>Ng/lý ngôn ngữ lập trình</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:4  BT:6.5  BTL:2</td><td align="center">3.5</td><td align="center">3.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: --</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>--</b><br>Số tín chỉ tích lũy học kỳ:<b>--</b><br>Điểm trung bình học kỳ:<b>--</b><br>Số tín chỉ tích lũy:<b>--</b><br>Điểm trung bình tích lũy:<b>--</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>--</b><br> Số TC đạt trong học kỳ: <b>--</b><br> Số TC tích lũy: <b>--</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20222 titlehocky">Học kỳ 2 (2022-2023)</div> <div align="left" class="grade-all grade-20222"><i>Ngày cập nhật điểm các môn học:08/01/2024 10:58:04 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20222 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3005</td><td>Ng/lý ngôn ngữ lập trình</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:4.5  BT:4  BTL:1.5</td><td align="center">3</td><td align="center">3.00 </td></tr><tr><td>CO4313</td><td>Luận văn tốt nghiệp(khmt</td><td align="center">CC01-A</td><td align="center">9</td><td> </td><td align="center">5.5</td><td align="center">5.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 11/12/2023 10:06:24 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>13</b><br>Số tín chỉ tích lũy học kỳ:<b>9</b><br>Điểm trung bình học kỳ:<b>4.73</b><br>Số tín chỉ tích lũy:<b>150</b><br>Điểm trung bình tích lũy:<b>6.11</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>0.00</b><br> Điểm trung bình tích lũy hệ 10: <b>5.98</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20221 titlehocky">Học kỳ 1 (2022-2023)</div> <div align="left" class="grade-all grade-20221"><i>Ngày cập nhật điểm các môn học:08/01/2024 10:58:04 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20221 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3087</td><td>Thực tập đồ án đa ngành</td><td align="center">CC01-A</td><td align="center">2</td><td> </td><td align="center">9.5</td><td align="center">9.50 </td></tr><tr><td>CO3069</td><td>Mật mã và an ninh mạng</td><td align="center">CC01-A</td><td align="center">3</td><td>BTL:8.5  TN:8.5</td><td align="center">5.5</td><td align="center">7.00 </td></tr><tr><td>IM1013</td><td>Kinh tế học đại cương</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:6  BT:8.5  BTL:8</td><td align="center">5</td><td align="center">6.30 </td></tr><tr><td>CO4311</td><td>Đề cương luận văn tn</td><td align="center">CC01-A</td><td align="center">0</td><td> </td><td align="center">7</td><td align="center">7.00 </td></tr><tr><td>CO3005</td><td>Ng/lý ngôn ngữ lập trình</td><td align="center">DTQT-A</td><td align="center">4</td><td>KT:2.5  BTL:3</td><td align="center">4.5</td><td align="center">3.20 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 30/10/2023 2:01:33 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>12</b><br>Số tín chỉ tích lũy học kỳ:<b>8</b><br>Điểm trung bình học kỳ:<b>5.98</b><br>Số tín chỉ tích lũy:<b>141</b><br>Điểm trung bình tích lũy:<b>6.15</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>5.98</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>8</b><br> Số TC tích lũy: <b>141</b><br> Điểm trung bình hệ 10: <b>5.98</b><br> Điểm trung bình tích lũy hệ 10: <b>6.15</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b><span style="color:#075385">30/10/2023</span></b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20213 titlehocky">Học kỳ 3 (2021-2022)</div> <div align="left" class="grade-all grade-20213"><i>Ngày cập nhật điểm các môn học:9/7/2023 8:16:34 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20213 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3087</td><td>Thực tập đồ án đa ngành</td><td align="center">CC01-A</td><td align="center">2</td><td> </td><td align="center">5.5</td><td align="center">5.50 </td></tr><tr><td>CO3313</td><td>Thực tập tốt nghiệp</td><td align="center">CC01-A</td><td align="center">2</td><td> </td><td align="center">8.5</td><td align="center">8.50 </td></tr><tr><td>CO4311</td><td>Đề cương luận văn tn</td><td align="center">CC01-A</td><td align="center">0</td><td> </td><td align="center">0</td><td align="center">0.00 </td></tr><tr><td>CO3031</td><td>Phân tích và thiết kế gt</td><td align="center">DTQ1-A</td><td align="center">3</td><td>KT:8  BTL:8</td><td align="center">8</td><td align="center">8.00 </td></tr><tr><td>MT1007</td><td>Đại số tuyến tính</td><td align="center">CC03-A</td><td align="center">3</td><td>KT:4  BT:5  BTL:7.5</td><td align="center">4.5</td><td align="center">5.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 5/23/2023 4:11:15 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>10</b><br>Số tín chỉ tích lũy học kỳ:<b>10</b><br>Điểm trung bình học kỳ:<b>6.70</b><br>Số tín chỉ tích lũy:<b>135</b><br>Điểm trung bình tích lũy:<b>5.99</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>0.00</b><br> Điểm trung bình tích lũy hệ 10: <b>5.83</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b><span style="color:#075385">02/03/2023</span></b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20212 titlehocky">Học kỳ 2 (2021-2022)</div> <div align="left" class="grade-all grade-20212"><i>Ngày cập nhật điểm các môn học:8/30/2023 8:48:49 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20212 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO2001</td><td>Kỹnăng chnghiệp cho kỹsư</td><td align="center">CC02-B</td><td align="center">3</td><td>BTL:8.5</td><td align="center">8.5</td><td align="center">8.50 </td></tr><tr><td>CO3027</td><td>Thương mại điện tử</td><td align="center">CC01-A</td><td align="center">3</td><td>BTL:7.5</td><td align="center">5</td><td align="center">6.30 </td></tr><tr><td>CO3029</td><td>Khai phá dữ liệu</td><td align="center">CC01-B</td><td align="center">3</td><td>KT:9  BTL:8</td><td align="center">3.5</td><td align="center">6 </td></tr><tr><td>CO3005</td><td>Ng/lý ngôn ngữ lập trình</td><td align="center">CC02-B</td><td align="center">4</td><td>KT:1  BT:1.5  BTL:1</td><td align="center">13</td><td align="center">0.70 </td></tr><tr><td>CO3061</td><td>Nhập môn trítuệ nhân tạo</td><td align="center">CC01-B</td><td align="center">3</td><td>BTL:10</td><td align="center">2.5</td><td align="center">5.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 5/23/2023 4:11:15 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>16</b><br>Số tín chỉ tích lũy học kỳ:<b>12</b><br>Điểm trung bình học kỳ:<b>5.11</b><br>Số tín chỉ tích lũy:<b>125</b><br>Điểm trung bình tích lũy:<b>5.77</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>5.11</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>12</b><br> Số TC tích lũy: <b>125</b><br> Điểm trung bình hệ 10: <b>5.11</b><br> Điểm trung bình tích lũy hệ 10: <b>5.77</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b><span style="color:#075385">02/03/2023</span></b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20211 titlehocky">Học kỳ 1 (2021-2022)</div> <div align="left" class="grade-all grade-20211"><i>Ngày cập nhật điểm các môn học:8/18/2023 2:35:21 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20211 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>MT1009</td><td>Phương pháp tính</td><td align="center">CC03-B</td><td align="center">3</td><td>KT:5.25  BT:10.00  BTL:8.00</td><td align="center">3.00</td><td align="center">5.00 </td></tr><tr><td>CO2013</td><td>Hệ cơ sở dữ liệu</td><td align="center">CC04-A</td><td align="center">4</td><td>BTL:8.33  TN:7.75</td><td align="center">3.33</td><td align="center">5.50 </td></tr><tr><td>MT2013</td><td>Xác suất và thống kê</td><td align="center">CC01-B</td><td align="center">4</td><td>KT:6.30  BTL:8.80</td><td align="center">3.30</td><td align="center">5.50 </td></tr><tr><td>CO3065</td><td>C/nghệ phần mềm nâng cao</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:8.00  TN:8.50</td><td align="center">8.00</td><td align="center">8.00 </td></tr><tr><td>CO2007</td><td>Kiến trúc máy tính</td><td align="center">CC04-A</td><td align="center">4</td><td>KT:6.20  BTL:6.00  TN:10.00</td><td align="center">3.00</td><td align="center">5.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 5/4/2023 11:31:44 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>18</b><br>Số tín chỉ tích lũy học kỳ:<b>18</b><br>Điểm trung bình học kỳ:<b>5.72</b><br>Số tín chỉ tích lũy:<b>113</b><br>Điểm trung bình tích lũy:<b>5.86</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>0.00</b><br> Điểm trung bình tích lũy hệ 10: <b>5.64</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20203 titlehocky">Học kỳ 3 (2020-2021)</div> <div align="left" class="grade-all grade-20203"><i>Ngày cập nhật điểm các môn học:12/7/2022 8:05:38 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20203 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>MT1009</td><td>Phương pháp tính</td><td align="center">DTQ1-A</td><td align="center">3</td><td>KT:4.00  BT:9.00  BTL:8.00</td><td align="center">13.00</td><td align="center">13.00 </td></tr><tr><td>PH1005</td><td>Vật lý 2</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:4.50  BT:7.00  BTL:9.00</td><td align="center">5.50</td><td align="center">5.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 11/7/2022 7:33:00 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>7</b><br>Số tín chỉ tích lũy học kỳ:<b>4</b><br>Điểm trung bình học kỳ:<b>3.14</b><br>Số tín chỉ tích lũy:<b>98</b><br>Điểm trung bình tích lũy:<b>5.73</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>5.50</b><br> Điểm rèn luyện: <b>75</b><br> Số TC đạt trong học kỳ: <b>4</b><br> Số TC tích lũy: <b>98</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b><span style="color:#075385">04/11/2022</span></b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20202 titlehocky">Học kỳ 2 (2020-2021)</div> <div align="left" class="grade-all grade-20202"><i>Ngày cập nhật điểm các môn học:7/20/2023 1:01:23 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20202 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3015</td><td>Kiểm tra phần mềm</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:4.00  BT:5.50  BTL:7.50</td><td align="center">6.00</td><td align="center">6.00 </td></tr><tr><td>CO3031</td><td>Phân tích và thiết kế gt</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:5.00  BTL:5.00</td><td align="center">3.00</td><td align="center">4.00 </td></tr><tr><td>CO3001</td><td>Công nghệ phần mềm</td><td align="center">CC01-A</td><td align="center">3</td><td>BT:6.50  BTL:5.80</td><td align="center">3.90</td><td align="center">5.00 </td></tr><tr><td>MT2001</td><td>Xác suất và thống kê</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:7.10  BT:8.00  BTL:7.00</td><td align="center">3.50</td><td align="center">5.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 3/31/2023 7:55:19 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>12</b><br>Số tín chỉ tích lũy học kỳ:<b>9</b><br>Điểm trung bình học kỳ:<b>5.00</b><br>Số tín chỉ tích lũy:<b>98</b><br>Điểm trung bình tích lũy:<b>5.73</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>0.00</b><br> Điểm trung bình tích lũy hệ 10: <b>5.45</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20201 titlehocky">Học kỳ 1 (2020-2021)</div> <div align="left" class="grade-all grade-20201"><i>Ngày cập nhật điểm các môn học:12/16/2022 3:14:05 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20201 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO3067</td><td>Tính toán song song</td><td align="center">CC01-A</td><td align="center">3</td><td>BTL:6.00  TN:6.60</td><td align="center">4.00</td><td align="center">5.50 </td></tr><tr><td>SP1013</td><td>Kỹ năng xã hội A</td><td align="center">CC07-_</td><td align="center">0</td><td> </td><td align="center">8.00</td><td align="center">8.00 </td></tr><tr><td>CO2007</td><td>Kiến trúc máy tính</td><td align="center">CC02-A</td><td align="center">4</td><td>KT:2.90  BTL:9.00  TN:9.50</td><td align="center">0.30</td><td align="center">0.50 </td></tr><tr><td>CO3041</td><td>Hệ thống thông minh</td><td align="center">CC01-B</td><td align="center">3</td><td>KT:9.00  BTL:6.00</td><td align="center">6.00</td><td align="center">7.00 </td></tr><tr><td>CO2017</td><td>Hệ điều hành</td><td align="center">CC01-A</td><td align="center">3</td><td>BT:2.00  BTL:8.50  TN:9.00</td><td align="center">4.00</td><td align="center">5.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 7/12/2022 10:02:01 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>13</b><br>Số tín chỉ tích lũy học kỳ:<b>9</b><br>Điểm trung bình học kỳ:<b>4.31</b><br>Số tín chỉ tích lũy:<b>92</b><br>Điểm trung bình tích lũy:<b>5.65</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20193 titlehocky">Học kỳ 3 (2019-2020)</div> <div align="left" class="grade-all grade-20193"><i>Ngày cập nhật điểm các môn học:07/04/2021 2:31:49 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20193 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>MT2001</td><td>Xác suất và thống kê</td><td align="center">DTQ1-_</td><td align="center">3</td><td>KT:6.50  BT:5.70  BTL:8.35</td><td align="center">2.00</td><td align="center">2.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 4/13/2021 10:27:38 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>3</b><br>Số tín chỉ tích lũy học kỳ:<b>0</b><br>Điểm trung bình học kỳ:<b>2.00</b><br>Số tín chỉ tích lũy:<b>80</b><br>Điểm trung bình tích lũy:<b>5.45</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>75</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20192 titlehocky">Học kỳ 2 (2019-2020)</div> <div align="left" class="grade-all grade-20192"><i>Ngày cập nhật điểm các môn học:16/12/2021 1:37:40 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20192 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>LA4005</td><td>Tiếng Việt 4</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:6.50  BTL:6.50</td><td align="center">6.00</td><td align="center">6.00 </td></tr><tr><td>CO3003</td><td>Mạng máy tính</td><td align="center">CC01-A</td><td align="center">4</td><td>BTL:7.50  TN:9.20</td><td align="center">3.80</td><td align="center">5.50 </td></tr><tr><td>CO3031</td><td>Phân tích và thiết kế gt</td><td align="center">CC02-A</td><td align="center">3</td><td>KT:3.00</td><td align="center">5.25</td><td align="center">4.50 </td></tr><tr><td>CO1023</td><td>Hệ thống số</td><td align="center">CC02-A</td><td align="center">3</td><td>KT:6.00  TN:8.50</td><td align="center">3.50</td><td align="center">5.50 </td></tr><tr><td>CO3001</td><td>Công nghệ phần mềm</td><td align="center">CC01-A</td><td align="center">3</td><td>BT:7.00  BTL:4.10</td><td align="center">2.00</td><td align="center">2.00 </td></tr><tr><td>CO3055</td><td>Thực tập công nghệ pm</td><td align="center">CC01-A</td><td align="center">2</td><td>BTL:8.00  TN:8.00</td><td align="center">8.00</td><td align="center">8.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 31/03/2021 10:26:54 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>18</b><br>Số tín chỉ tích lũy học kỳ:<b>12</b><br>Điểm trung bình học kỳ:<b>5.11</b><br>Số tín chỉ tích lũy:<b>80</b><br>Điểm trung bình tích lũy:<b>5.41</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20191 titlehocky">Học kỳ 1 (2019-2020)</div> <div align="left" class="grade-all grade-20191"><i>Ngày cập nhật điểm các môn học:20/07/2021 8:14:31 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20191 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO2007</td><td>Kiến trúc máy tính</td><td align="center">CC01-B</td><td align="center">4</td><td>KT:3.30  BTL:5.00  TN:9.00</td><td align="center">2.60</td><td align="center">2.50 </td></tr><tr><td>CO2017</td><td>Hệ điều hành</td><td align="center">CC01-A</td><td align="center">3</td><td>BT:4.00  BTL:3.50  TN:6.30</td><td align="center">4.00</td><td align="center">4.00 </td></tr><tr><td>CO2011</td><td>Mô hình hóa toán học</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:5.00  BTL:7.00</td><td align="center">5.00</td><td align="center">5.50 </td></tr><tr><td>LA3019</td><td>Tiếng Việt 3</td><td align="center">CC01-_</td><td align="center">3</td><td>KT:8.50  BTL:8.50</td><td align="center">8.50</td><td align="center">8.50 </td></tr><tr><td>MT2001</td><td>Xác suất và thống kê</td><td align="center">CC01-B</td><td align="center">3</td><td>KT:4.50  BTL:2.00</td><td align="center">0.50</td><td align="center">0.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 20/07/2021 8:13:06 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>16</b><br>Số tín chỉ tích lũy học kỳ:<b>6</b><br>Điểm trung bình học kỳ:<b>4.09</b><br>Số tín chỉ tích lũy:<b>68</b><br>Điểm trung bình tích lũy:<b>5.47</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>75</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20183 titlehocky">Học kỳ 3 (2018-2019)</div> <div align="left" class="grade-all grade-20183"><i>Ngày cập nhật điểm các môn học:23/09/2020 2:56:29 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20183 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO1009</td><td>Hệ thống số</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:5.50  BT:7.00  BTL:9.00  TN:8.00</td><td align="center">4.50</td><td align="center">6.00 </td></tr><tr><td>MT1005</td><td>Giải tích 2</td><td align="center">CC02-A</td><td align="center">4</td><td>KT:5.00  BTL:10.00</td><td align="center">4.50</td><td align="center">5.50 </td></tr><tr><td>CO1011</td><td>Kỹ thuật lập trình</td><td align="center">CC01-A</td><td align="center">4</td><td>BTL:10.00  TN:8.30</td><td align="center">7.10</td><td align="center">8.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 09/04/2020 3:31:42 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>12</b><br>Số tín chỉ tích lũy học kỳ:<b>12</b><br>Điểm trung bình học kỳ:<b>6.50</b><br>Số tín chỉ tích lũy:<b>62</b><br>Điểm trung bình tích lũy:<b>5.48</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20182 titlehocky">Học kỳ 2 (2018-2019)</div> <div align="left" class="grade-all grade-20182"><i>Ngày cập nhật điểm các môn học:09/09/2021 11:40:47 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20182 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>LA2015</td><td>Tiếng Việt 2</td><td align="center">CC01-_</td><td align="center">3</td><td> </td><td align="center">8.50</td><td align="center">8.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 09/09/2021 11:43:53 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>3</b><br>Số tín chỉ tích lũy học kỳ:<b>3</b><br>Điểm trung bình học kỳ:<b>8.50</b><br>Số tín chỉ tích lũy:<b>58</b><br>Điểm trung bình tích lũy:<b>5.05</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20181 titlehocky">Học kỳ 1 (2018-2019)</div> <div align="left" class="grade-all grade-20181"><i>Ngày cập nhật điểm các môn học:23/09/2020 2:48:32 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20181 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO2005</td><td>Lập trình hướng đốitượng</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:6.00  TN:8.72</td><td align="center">3.00</td><td align="center">5.50 </td></tr><tr><td>MT1009</td><td>Phương pháp tính</td><td align="center">CC02-A</td><td align="center">3</td><td>KT:4.50  BTL:8.00</td><td align="center">4.50</td><td align="center">5.00 </td></tr><tr><td>PE1007</td><td>Giáo dục thể chất 3</td><td align="center">CC01-A</td><td align="center">0</td><td> </td><td align="center">6.00</td><td align="center">6.00 </td></tr><tr><td>LA1027</td><td>Tiếng Việt 1</td><td align="center">CC01-_</td><td align="center">3</td><td>KT:8.50  BTL:10.00</td><td align="center">8.00</td><td align="center">8.50 </td></tr><tr><td>PH1005</td><td>Vật lý 2</td><td align="center">CC02-A</td><td align="center">4</td><td>KT:5.50  BT:9.00  BTL:9.00</td><td align="center">4.50</td><td align="center">5.50 </td></tr><tr><td>CO2007</td><td>Kiến trúc máy tính</td><td align="center">CC01-A</td><td align="center">4</td><td> </td><td align="center">0.00</td><td align="center">0.00 </td></tr><tr><td>CO2003</td><td>Ctrúc dữliệu &amp; giảithuật</td><td align="center">CC01-A</td><td align="center">4</td><td>BT:9.00  BTL:4.00  TN:8.00</td><td align="center">4.00</td><td align="center">5.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 10/09/2019 5:42:20 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>22</b><br>Số tín chỉ tích lũy học kỳ:<b>18</b><br>Điểm trung bình học kỳ:<b>4.75</b><br>Số tín chỉ tích lũy:<b>55</b><br>Điểm trung bình tích lũy:<b>4.88</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20172 titlehocky">Học kỳ 2 (2017-2018)</div> <div align="left" class="grade-all grade-20172"><i>Ngày cập nhật điểm các môn học:23/09/2020 3:49:52 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20172 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>CO1011</td><td>Kỹ thuật lập trình</td><td align="center">CC01-A</td><td align="center">4</td><td>BTL:10.00  TN:2.50</td><td align="center">3.30</td><td align="center">2.50 </td></tr><tr><td>CO1009</td><td>Hệ thống số</td><td align="center">CC01-A</td><td align="center">4</td><td>KT:5.00  BT:7.00  BTL:8.50  TN:8.00</td><td align="center">3.50</td><td align="center">5.00 </td></tr><tr><td>MT1007</td><td>Đại số tuyến tính</td><td align="center">CC04-AA</td><td align="center">3</td><td>KT:2.00  BTL:2.00</td><td align="center">13.00</td><td align="center">13.00 </td></tr><tr><td>MT1005</td><td>Giải tích 2</td><td align="center">CC04-AA</td><td align="center">4</td><td>KT:3.00  BTL:7.00</td><td align="center">5.00</td><td align="center">5.00 </td></tr><tr><td>PE1005</td><td>Giáo dục thể chất 2</td><td align="center">CC06-_</td><td align="center">0</td><td> </td><td align="center">6.00</td><td align="center">6.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 12/03/2020 2:02:25 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>15</b><br>Số tín chỉ tích lũy học kỳ:<b>8</b><br>Điểm trung bình học kỳ:<b>3.33</b><br>Số tín chỉ tích lũy:<b>37</b><br>Điểm trung bình tích lũy:<b>4.95</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20171 titlehocky">Học kỳ 1 (2017-2018)</div> <div align="left" class="grade-all grade-20171"><i>Ngày cập nhật điểm các môn học:23/09/2020 3:49:18 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20171 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>PH1007</td><td>Thí nghiệm vật lý</td><td align="center">CC05-_</td><td align="center">1</td><td>TN:6.63</td><td align="center">4.00</td><td align="center">5.50 </td></tr><tr><td>CH1003</td><td>Hóa đại cương</td><td align="center">CC05-A</td><td align="center">3</td><td>KT:9.00  TN:8.50</td><td align="center">4.50</td><td align="center">6.50 </td></tr><tr><td>CO1005</td><td>Nhập môn điện toán</td><td align="center">CC01-A</td><td align="center">3</td><td>KT:4.50  BTL:8.00  TN:8.00</td><td align="center">5.00</td><td align="center">6.00 </td></tr><tr><td>PH1003</td><td>Vật lý 1</td><td align="center">CC03-AB</td><td align="center">4</td><td>KT:4.50  BT:8.00  BTL:9.00</td><td align="center">4.50</td><td align="center">5.50 </td></tr><tr><td>MT1003</td><td>Giải tích 1</td><td align="center">CC03-AB</td><td align="center">4</td><td>KT:5.00  BTL:9.00</td><td align="center">5.00</td><td align="center">6.00 </td></tr><tr><td>CO1007</td><td>Cấutrúc rời rạc cho KHMT</td><td align="center">CC01-B</td><td align="center">4</td><td>KT:4.50  BTL:7.00</td><td align="center">5.00</td><td align="center">5.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 15/11/2018 4:34:10 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>19</b><br>Số tín chỉ tích lũy học kỳ:<b>19</b><br>Điểm trung bình học kỳ:<b>5.74</b><br>Số tín chỉ tích lũy:<b>25</b><br>Điểm trung bình tích lũy:<b>5.92</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>0</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20162 titlehocky">Học kỳ 2 (2016-2017)</div> <div align="left" class="grade-all grade-20162"><i>Ngày cập nhật điểm các môn học:23/09/2020 3:51:43 PM</i></div> <div class="content-tab-table"><table class="grade-all grade-20162 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>LA4003</td><td>Anh văn tăng cường 4</td><td align="center">QT10-_</td><td align="center">2</td><td> </td><td align="center">5.50</td><td align="center">5.50 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 18/12/2017 1:57:18 PM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>2</b><br>Số tín chỉ tích lũy học kỳ:<b>2</b><br>Điểm trung bình học kỳ:<b>5.50</b><br>Số tín chỉ tích lũy:<b>6</b><br>Điểm trung bình tích lũy:<b>6.50</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>5.50</b><br> Điểm rèn luyện: <b>0</b><br> Số TC đạt trong học kỳ: <b>2</b><br> Số TC tích lũy: <b>0</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div><div align="left" class="grade-all grade-20161 titlehocky">Học kỳ 1 (2016-2017)</div> <div align="left" class="grade-all grade-20161"><i>Ngày cập nhật điểm các môn học:26/07/2021 8:58:16 AM</i></div> <div class="content-tab-table"><table class="grade-all grade-20161 table table-bordered table-striped"><thead><tr><th>Mã MH</th><th width="30%">Tên môn học</th><th>Nhóm-Tổ</th><th>Số TC</th><th valign="middle">Điểm thành phần</th><th>Điểm thi</th><th>Điểm tổng kết</th></tr></thead><tbody><tr><td>SP1017</td><td>Kỹ năng xã hội C</td><td align="center">QT02-_</td><td align="center">0</td><td> </td><td align="center">13</td><td align="center">13.00 </td></tr><tr><td>SP1011</td><td>Kỹ năng mềm</td><td align="center">QT21-_</td><td align="center">2</td><td>KT:8.06  BT:8.06</td><td align="center">8.06</td><td align="center">8.00 </td></tr><tr><td>PE1003</td><td>Giáo dục thể chất 1</td><td align="center">QT09-_</td><td align="center">0</td><td> </td><td align="center">8</td><td align="center">8.00 </td></tr><tr><td>LA3011</td><td>Anh văn tăng cường 3</td><td align="center">QT16-_</td><td align="center">2</td><td> </td><td align="center">6.00</td><td align="center">6.00 </td></tr><tr><td colspan="7"><i><small><span style="color: #0c6aaa"> Ngày cập nhật Số tín chỉ, Điểm TB ...: 10/7/2016 10:02:21 AM</span></small></i></td></tr><tr style="color:#cc3c1f"><td colspan="3"> Số tín chỉ đăng ký học kỳ :<b>4</b><br>Số tín chỉ tích lũy học kỳ:<b>4</b><br>Điểm trung bình học kỳ:<b>7.00</b><br>Số tín chỉ tích lũy:<b>4</b><br>Điểm trung bình tích lũy:<b>7.00</b></td><td colspan="4"><span style="color: #004a73"> <b>Thông tin xét học bổng khuyến khích học tập</b></span> <br> ĐTB 1 học kỳ: <b>--</b><br> Điểm rèn luyện: <b>--</b><br> Số TC đạt trong học kỳ: <b>--</b><br> Số TC tích lũy: <b>--</b><br> Điểm trung bình hệ 10: <b>--</b><br> Điểm trung bình tích lũy hệ 10: <b>--</b><br> Điều kiện xét HBKK: <b>Không đủ</b><br> Kết quả xét HBKK: <b>--</b><br> Ngày cập nhật: <b>--</b></td></tr></tbody></table></div></div><br>
+    <p align="left">
+        <b>Lưu ý : </b>
+        <br>- Giảng viên giảng dạy môn học có trách nhiệm nhập điểm vào Hệ thống quản lý điểm trong thời gian tối đa <b>2 tuần</b> sau ngày thi cuối kỳ (không kể các ngày lễ nếu có) và nộp bảng điểm đến Phòng Đào tạo.
+        <br>
+        - Phòng Đào tạo có trách nhiệm công bố điểm cho sinh viên trong vòng một ngày kể từ khi giảng viên nộp bảng điểm.
+        <br>
+        - Nếu phát hiện có sai sót trong việc nhập điểm hoặc thắc mắc về các điểm thành phần, sinh viên cần phản ánh với giảng viên để được điều chỉnh.
+        Sinh viên có thể nộp đơn xin phúc tra điểm thi cuối kỳ tại Phòng Đào tạo trong vòng <b>5 ngày</b> kể từ ngày công bố điểm (không phúc tra các điểm thành phần).
+        <br>
+        - Các điểm đặc biệt: </p>
+    <div align="center">
+        <table align="center" width="100%" cellpadding="0" cellspacing="0" border="1" bordercolor="#ddd">
+            <tbody>
+            <tr style="font-weight: bold">
+
+                <th width="20%">Loại điểm </th>
+                <th>Điểm số </th>
+                <th>Điểm chữ </th>
+                <th width="60%">Ghi chú </th>
+            </tr>
+            <tr>
+                <td>Cấm thi</td>
+                <th>11</th>
+                <th>CT </th>
+                <td>Được tính như điểm 0</td>
+            </tr>
+            <tr>
+                <td>Miễn học, miễn thi</td>
+                <th>12</th>
+                <th>MT</th>
+                <td>Đạt nhưng không tính vào ĐTB</td>
+            </tr>
+            <tr>
+                <td>Vắng thi</td>
+                <th>13</th>
+                <th>VT</th>
+                <td>Được tính như điểm 0</td>
+            </tr>
+
+            <tr>
+                <td>Hoãn thi, được phép thi sau</td>
+                <th>14</th>
+                <th>HT</th>
+                <td>
+                    Không đạt và không tính vào ĐTB
+                    Được thỏa điều kiện môn học trước</td>
+            </tr>
+            <tr>
+                <td>Chưa có điểm</td>
+                <th>15</th>
+                <th>CH</th>
+                <td>Chưa tính số TCTL và ĐTB</td>
+            </tr>
+
+            <tr>
+                <td>Rút môn học </td>
+                <th>17</th>
+                <th>RT</th>
+                <td>
+                    Không ghi vào bảng điểm</td>
+            </tr>
+            <tr>
+                <td>Không đạt</td>
+                <th>20</th>
+                <th>KD
+                </th>
+                <td>
+                    Được tính như điểm 0</td>
+            </tr>
+            <tr>
+                <td>Đạt</td>
+                <th>21</th>
+                <th>DT</th>
+                <td>Đạt nhưng không tính vào ĐTB</td>
+            </tr>
+            <tr>
+                <td>Vắng thi có phép</td>
+                <th>22</th>
+                <th>VP</th>
+                <td>Không đạt và không tính vào ĐTB
+                    Được thỏa điều kiện môn học trước</td>
+            </tr>
+            <tr>
+                <th colspan="2"><div align="center">Kiểm tra trình độ tiếng Anh</div>
+                </th><td colspan="2">Điểm Listening: cột điểm thành phần
+                    <br>
+                    Điểm Reading: cột điểm thi
+                    <br>
+                    Điểm: cột điểm tổng kết
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"><div align="center">Điểm thành phần</div>
+                </th><td colspan="2">BT: điểm bài tập
+                    <br>
+                    BTL: điểm bài tập lớn
+                    <br>
+                    DA: điểm đồ án
+                    <br>
+                    TN: điểm thí nghiệm
+
+                </td>
+            </tr>
+
+            </tbody></table>
+
+    </div>
+</div>
+
+
+
+
+
+</div></div>
+    </div>
+
+</div>
+
+                </div>
+                <div class="row home-content-padding">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="home-content-calendar-wp">
+            <div class="home-content-calendar">
+                <div class="home-content-calendar-title">
+                    <h4 class="title-cal">Phòng đào tạo</h4>
+                </div>
+                <div class="home-content-calendar-table">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <td>Cao đẳng, đại học chính quy
+                                        <br>
+                                        Email: pdt@hcmut.edu.vn
+
+                                    </td>
+                                </tr>
+                                <tr><td>
+                                        <b>Cơ sở 1:</b> Lý Thường Kiệt<br>
+                                        Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.101 nhà A1
+                                        <br>
+                                        Điện thoai: 02.838 647 256 - 5221
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><b>Cơ sở 2:</b> Dĩ An<br>
+                                        Địa chỉ: Trường ĐH Bách Khoa, khu đô thị ĐHQG HCM, Thủ Đức, HCM - P.107 nhà H1
+                                        <br>
+                                        Điện thoai:
+
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="home-content-calendar-wp">
+            <div class="home-content-calendar">
+                <div class="home-content-calendar-title">
+                    <h4 class="title-cal">Phòng đào tạo (VLVH)</h4>
+                </div>
+                <div class="home-content-calendar-table">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <td>Vừa làm vừa học, đào tạo từ xa, chính quy bằng 2<br>
+                                        Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.201 nhà A4
+                                        <br>
+                                        Điện thoai:
+                                        <br>
+                                        Email: pdt@hcmut.edu.vn
+                                        
+                                    </td>
+
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="home-content-calendar-wp">
+            <div class="home-content-calendar">
+                <div class="home-content-calendar-title">
+                    <h4 class="title-cal">Văn phòng đào tạo quốc tế</h4>
+                </div>
+                <div class="home-content-calendar-table">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <td>
+
+                                        Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.306 nhà A4
+                                        <br>
+                                        Điện thoai: 02. 838 654 183
+                                        <br>
+                                        Email:
+                                        <br>
+                                        Website:<a href="http://oisp.hcmut.edu.vn/" target="_self">http://oisp.hcmut.edu.vn/</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+</div>
+
+<!-- footer -->
+<footer class="footer-wp">
+    <p>Copyright©2016. Phòng Đào tạo - Trường Đại học Bách Khoa TPHCM.</p>
+    <p>Mọi thắc mắc vui lòng liên hệ email: <a href="mailto:pdt@hcmut.edu.vn">  pdt@hcmut.edu.vn</a></p>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./Cổng Thông Tin Sinh Viên_files/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./Cổng Thông Tin Sinh Viên_files/bootstrap.min.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/bootbox.min.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/lightbox-plus-jquery.min.js"></script><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://mybk.hcmut.edu.vn/stinfo/"></a><a class="lb-next" href="https://mybk.hcmut.edu.vn/stinfo/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxcore.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxtabs.js"></script>
+
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxwindow.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdata.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxbuttons.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxscrollbar.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxmenu.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxcheckbox.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxlistbox.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdropdownlist.js"></script>
+
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.sort.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.filter.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.pager.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.selection.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.edit.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdata.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.columnsresize.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxtooltip.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxcombobox.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdata.export.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxvalidator.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxinput.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxnumberinput.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdatatable.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxloader.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.grouping.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxtooltip.js"></script>
+
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxdata.export.js"></script>
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/jqxgrid.export.js"></script>
+
+<script type="text/javascript" src="./Cổng Thông Tin Sinh Viên_files/validator.min.js"></script>
+
+
+<!-- Menu left -->
+<script>
+    $(document).ready(function() {
+        $('.button').on('click', function() {
+            $('.content').toggleClass('isOpen');
+            $('.wrapper').toggleClass('isOpen1');
+            $('.sidebar').toggleClass('isClose');
+        });
+        $('.has-sub').hover(
+                function(){ $(this).addClass('hover-sub-menu') },
+                function(){ $(this).removeClass('hover-sub-menu') }
+        )
+        $(".has-sub").click(function(){
+            $(".has-sub").removeClass("hover-sub-menu");
+        });
+        $(".has-sub").mouseleave(function(){
+            $(".has-sub").removeClass("open");
+        });
+    });
+</script>
+<script>
+    $(window).resize(function(){
+        if ($(window).width() <= 1200){
+            $( ".wrapper" ).removeClass( "isOpen1" );
+            $( ".sidebar" ).removeClass( "isClose" );
+            $( ".content" ).removeClass( "isOpen" );
+
+        }
+    });
+</script>
+<!-- jquery scrollbar -->
+<!-- Scrollbar -->
+<script src="./Cổng Thông Tin Sinh Viên_files/jquery.mousewheel.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/jquery.mCustomScrollbar.js"></script>
+<script>
+    (function($){
+        $(window).load(function(){
+            $(".content_scroll-noti").mCustomScrollbar({
+                scrollButtons:{
+                    enable:true
+                }
+            });
+        });
+    })(jQuery);
+</script>
+<script src="./Cổng Thông Tin Sinh Viên_files/script.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/myjs.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/masonry.pkgd.min.js"></script>
+<script src="./Cổng Thông Tin Sinh Viên_files/imagesloaded.pkgd.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // init Masonry
+        var $grid = $('.grid').masonry({
+          //  percentPosition: true,
+            animate: true,
+            itemSelector:'.grid-item',
+
+         });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+
+    });
+
+</script>
+
+
+
+
+</body></html>
